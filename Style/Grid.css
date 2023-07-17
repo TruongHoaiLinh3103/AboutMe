@@ -1,0 +1,191 @@
+.grid__full-width{
+    max-width: 100%;
+    padding: 0px;
+    display: block;
+}
+/* Đối với PC */
+.grid{
+    width: 1200px;
+    margin: 0px auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 12px;
+}
+.col{
+    padding: 0px 12px;
+}
+.col0{
+    display: none;
+}
+.col1{
+    flex: 0 0 8.3334%;
+    max-width: 8.3334%;
+}
+.col2{
+    flex: 0 0 16.6667%;
+    max-width: 16.6667%;
+}
+.col3{
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+.col4{
+    flex: 0 0 33.3334%;
+    max-width: 33.3334%;
+}
+.col5{
+    flex: 0 0 41.6667%; 
+    max-width: 41.6667%;
+}
+.col6{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.col7{
+    flex: 0 0 58.3334%;
+    max-width: 58.3334%;
+}
+.col8{
+    flex: 0 0 66.6667%;
+    max-width: 66.6667%;
+}
+.col9{
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+.col10{
+    flex: 0 0 83.3334%;
+    max-width: 83.3334%;
+}
+.col11{
+    flex: 0 0 91.6667%;
+    max-width: 91.6667%;
+}
+.col12{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+/* Đối với tablet */
+@media only screen and (min-width: 46.25em) and (max-width: 65em){
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px 8px;
+    }
+    .col{
+        padding: 0px 8px;
+    }
+    .m_col0{
+        display: none;
+    }
+    .m_col1{
+        flex: 0 0 8.3334%;
+        max-width: 8.3334%;
+    }
+    .m_col2{
+        flex: 0 0 16.6667%;
+        max-width: 16.6667%;
+    }
+    .m_col3{
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .m_col4{
+        flex: 0 0 33.3334%;
+        max-width: 33.3334%;
+    }
+    .m_col5{
+        flex: 0 0 41.6667%; 
+        max-width: 41.6667%;
+    }
+    .m_col6{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .m_col7{
+        flex: 0 0 58.3334%;
+        max-width: 58.3334%;
+    }
+    .m_col8{
+        flex: 0 0 66.6667%;
+        max-width: 66.6667%;
+    }
+    .m_col9{
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .m_col10{
+        flex: 0 0 83.3334%;
+        max-width: 83.3334%;
+    }
+    .m_col11{
+        flex: 0 0 91.6667%;
+        max-width: 91.6667%;
+    }
+    .m_col12{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+/* Đối với mobile */
+@media only screen and (max-width: 46.249em){
+    .row{
+        margin: 0px 4px;
+    }
+    .col{
+        padding: 0px 4px;
+    }
+    .s_col0{
+        display: none;
+    }
+    .s_col1{
+        flex: 0 0 8.3334%;
+        max-width: 8.3334%;
+    }
+    .s_col2{
+        flex: 0 0 16.6667%;
+        max-width: 16.6667%;
+    }
+    .s_col3{
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .s_col4{
+        flex: 0 0 33.3334%;
+        max-width: 33.3334%;
+    }
+    .s_col5{
+        flex: 0 0 41.6667%; 
+        max-width: 41.6667%;
+    }
+    .s_col6{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .s_col7{
+        flex: 0 0 58.3334%;
+        max-width: 58.3334%;
+    }
+    .s_col8{
+        flex: 0 0 66.6667%;
+        max-width: 66.6667%;
+    }
+    .s_col9{
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .s_col10{
+        flex: 0 0 83.3334%;
+        max-width: 83.3334%;
+    }
+    .s_col11{
+        flex: 0 0 91.6667%;
+        max-width: 91.6667%;
+    }
+    .s_col12{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
