@@ -75,14 +75,15 @@
 .btn__next a{
     color: white;
     font-size: 1.5em;
+    padding: 10px;
 }
 
-/* ABOUT ME */
+/* MY PROFILE */
 #myProfile{
     border-radius: 10px;
     padding: 50px 0px;
 }
-#myProfile h1, #aboutMe h1{
+#myProfile h1, #aboutMe h1, #bank h1{
     margin: 0px;
     color: black;
     font-size: var(--my-fontsize);
@@ -165,6 +166,7 @@ p.profile-dis_mar, a.profile-dis_mar, img.profile-dis_mar{
 .btn__next3 a{
     color: white;
     font-size: 1.5em;
+    padding: 10px;
 }
 .btn__next3_{
     background-color: rgb(14, 14, 14);
@@ -179,4 +181,219 @@ p.profile-dis_mar, a.profile-dis_mar, img.profile-dis_mar{
 .btn__next3_ a{
     color: white;
     font-size: 1.5em;
+    padding: 10px;
+}
+
+/* BANKING */
+#bank h1.bank-title{
+    letter-spacing: 10px;
+    color: darkgreen;
+    font-size: var(--my-fontsize);
+    margin-bottom: 20px;
+}
+.bank{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+/* Techcombank */
+.bank-tec{
+    height: 350px;
+    border-bottom: 3px solid darkmagenta;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+ .flip-card {
+    background-color: transparent;
+    width: 260px;
+    height: 160px;
+    perspective: 1000px;
+    color: white;
+  }
+  
+  .heading_8264 {
+    position: absolute;
+    letter-spacing: .2em;
+    font-size: 0.5em;
+    top: 2em;
+    left: 18.6em;
+  }
+  
+  .logo {
+    position: absolute;
+    top: 6.8em;
+    left: 11.7em;
+  }
+  
+  .chip {
+    position: absolute;
+    top: 2.3em;
+    left: 1.5em;
+  }
+  
+  .contactless {
+    position: absolute;
+    top: 3.5em;
+    left: 12.4em;
+  }
+  
+  .number {
+    position: absolute;
+    font-weight: bold;
+    font-size: .7em;
+    top: 8.3em;
+    left: 1.6em;
+  }
+  
+  .valid_thru {
+    position: absolute;
+    font-weight: bold;
+    top: 743.8em;
+    font-size: .01em;
+    left: 140.3em;
+  }
+  
+  .date_8264 {
+    position: absolute;
+    font-weight: bold;
+    font-size: 0.5em;
+    top: 14.6em;
+    left: 3.2em;
+  }
+  
+  .name {
+    position: absolute;
+    font-weight: bold;
+    font-size: 0.5em;
+    top: 16.1em;
+    left: 2em;
+  }
+  
+  .strip {
+    position: absolute;
+    background-color: black;
+    width: 15em;
+    height: 1.5em;
+    top: 2.4em;
+    background: repeating-linear-gradient(
+      45deg,
+      #303030,
+      #303030 10px,
+      #202020 10px,
+      #202020 20px
+    );
+  }
+  
+  .mstrip {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 8em;
+    height: 0.8em;
+    top: 5em;
+    left: .8em;
+    border-radius: 2.5px;
+  }
+  
+  .sstrip {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 4.1em;
+    height: 0.8em;
+    top: 5em;
+    left: 10em;
+    border-radius: 2.5px;
+  }
+  
+  .code {
+    font-weight: bold;
+    text-align: center;
+    margin: .2em;
+    color: black;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+  }
+  
+  .flip-card-front {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
+    background-color: #171717;
+  }
+  
+  .flip-card-back {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
+    background-color: #171717;
+    transform: rotateY(180deg);
+  }
+  .bank-bank{
+    margin-top: 20px;
+  }
+  .bank-bank-space{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .bank-bank-space + .bank-bank-space{
+    margin-top: 5px;
+  }
+  .bank-space-martb{
+    margin: 0px;
+  }
+  .bank-space-mar{
+    margin: 0px 0px 0px 10px;
+  }
+/* Vietinbank */
+.bank-viet{
+    height: 350px;
+    margin-top: -150px;
+    border-top: 3px solid darkgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.col4 h3{
+    letter-spacing: 3px;
+    color: darkgoldenrod;
+    filter: drop-shadow(16px 16px 20px red) invert(75%);
+    position: absolute;
+    top: -10px;
+    left: 20px;
+}
+
+/* Momo */
+.bank-momo{
+    height: 200px;
+}
+
+/* Qr bank */
+.bank-qr{
+    height: 200px;
+    border-left: 1px solid transparent;
 }
