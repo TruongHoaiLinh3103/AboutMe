@@ -16,33 +16,43 @@
     text-align: center;
     margin: 5px 0px;
 }
-.body__home-index p{
-    margin: 50px 0px;
-}
 .home-index__titleone{
     color: darkmagenta;
 }
 .home-index__titletwo{
     color: darkgreen;
 }
-.home-index__pone{
+.home-index_div + .home-index_div{
+    margin-top: 10px;
+}
+.home-index_div p.home-index__pone{
     display: flex;
     justify-content: flex-start;
     font-size: var(--fontsize-p);
     font-family: cursive;
+    margin: 0px;
+}
+.home-index__hr{
+    width: 300px;
+    background-color: rgb(185, 182, 182);
+    height: 10px;
+    border-radius: 20px;
+    margin-top: 5px;
+    position: relative;
 }
 .home-index__ptwo{
     display: flex;
     justify-content: flex-end;
     font-size: var(--fontsize-p);
     font-family: cursive;
+    text-align: end;
 }
 .body__home-img{
     width: 450px;
     height: 450px;
     position: absolute;
     top: 80px;
-    right: -240px;
+    right: -200px;
     border-bottom-right-radius: 30%;
     border-bottom-left-radius: 30%;
 }
@@ -52,32 +62,57 @@
 .index__title-span:hover{
     transform: translateX(20px);
 }
+.btn__next{
+    background-color: rgb(14, 14, 14);
+    width: 50px;
+    height: 50px;
+    border-radius: 120%;
+    cursor: pointer;
+    position: absolute;
+    right: 120px;
+    bottom: -50px;
+}
+.btn__next a{
+    color: white;
+    font-size: 1.5em;
+}
 
 /* ABOUT ME */
-#aboutMe{
-    background-color: rgb(157, 209, 255);
+#myProfile{
     border-radius: 10px;
+    padding: 50px 0px;
 }
-#aboutMe h1{
+#myProfile h1, #aboutMe h1{
     margin: 0px;
-    padding: 20px 0px 0px 20px;
-    color: rgb(0, 0, 0);
+    color: black;
     font-size: var(--my-fontsize);
     letter-spacing: 2px;
+    padding-left: 20px;
+    margin-top: -30px;
 }
-.aboutMe-form{
+#myProfile h1.myProfile-title{
+    letter-spacing: 10px;
+    color: darkmagenta;
+    font-size: var(--my-fontsize);
+}
+.myProfile-form{
+    margin-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
-.aboutMe-form__profile{
+.myProfile-form__profile{
     width: 700px;
-    height: 400px;
-    background-color: white;
+    height: 600px;
+    background-color: #fefefe;
     border-radius: 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: relative;
+    border-top: outset;
+    border-left: outset;
 }
 .form__profile-i{
     width: 250px;
@@ -85,6 +120,17 @@
     border-radius: 150vh;
     border: solid rgb(0, 0, 0) 5px;
     box-shadow: 5px 3px 3px rgb(200, 198, 198);;
+}
+.form__profile-t{
+    position: absolute;
+    top: -160px;
+}
+.form__profile-b{
+    position: absolute;
+    bottom: 0px;
+    width: 120px;
+    height: 120px;
+    right: 0px;
 }
 .form-profile__p h3{
     font-weight: lighter;
@@ -98,10 +144,39 @@
 .form-profile_dis p{
     margin: 10px 0px;
     letter-spacing: 2px;
+    z-index: 1;
 }
 .form__profile-i2{
     height: 70px;
 }
 p.profile-dis_mar, a.profile-dis_mar, img.profile-dis_mar{
     margin-left: 20px;
+}
+.btn__next3{
+    background-color: rgb(14, 14, 14);
+    width: 50px;
+    height: 50px;
+    border-radius: 120%;
+    cursor: pointer;
+    position: absolute;
+    right: 120px;
+    bottom: 274px;
+}
+.btn__next3 a{
+    color: white;
+    font-size: 1.5em;
+}
+.btn__next3_{
+    background-color: rgb(14, 14, 14);
+    width: 50px;
+    height: 50px;
+    border-radius: 120%;
+    cursor: pointer;
+    position: absolute;
+    left: 120px;
+    bottom: 274px;
+}
+.btn__next3_ a{
+    color: white;
+    font-size: 1.5em;
 }

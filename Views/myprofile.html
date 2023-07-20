@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Style/Basic.css">
-    <link rel="stylesheet" href="./Style/Main.css">
-    <link rel="stylesheet" href="./Style/Grid.css">
+    <link rel="stylesheet" href="../Style/Basic.css">
+    <link rel="stylesheet" href="../Style/Main.css">
+    <link rel="stylesheet" href="../Style/Grid.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="./Style/Body.css">
-    <link rel="stylesheet" href="./Style/Footer.css">
+    <link rel="stylesheet" href="../Style/Body.css">
+    <link rel="stylesheet" href="../Style/Footer.css">
     <title>Profile</title>
 </head>
 <body class="body">
     <header class="header">
         <nav class="nav-group">
             <ul class="group-menu">
-                <li class="menu-li"><a href="#body__home">Home</a></li>
-                <li class="menu-li"><a href="#aboutMe">About me</a></li>
-                <li class="menu-li"><a href="#">My profile</a></li>
-                <li class="menu-li"><a href="#">Contact</a></li>
+                <li class="menu-li"><a href="index.html">Home</a></li>
+                <li class="menu-li"><a href="aboutme.html">About me</a></li>
+                <li class="menu-li"><a href="myprofile.html">My profile</a></li>
+                <li class="menu-li"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         <label for="nav__bars" class="nav__bars">
@@ -29,10 +29,10 @@
             <label for="nav__bars" class="navbar__overlay"></label>
             <div class="navbar__body">
                 <ul class="bars__box-nav">
-                    <li class="menu-li"><i class="fa-solid fa-house"></i><a href="#">Home</a></li>
-                    <li class="menu-li"><i class="fa-regular fa-address-card"></i><a href="#">About me</a></li>
-                    <li class="menu-li"><i class="fa-regular fa-face-smile"></i><a href="#">My profile</a></li>
-                    <li class="menu-li"><i class="fa-solid fa-phone"></i><a href="#">Contact</a></li>
+                    <li class="menu-li"><i class="fa-solid fa-house"></i><a href="index.html">Home</a></li>
+                    <li class="menu-li"><i class="fa-regular fa-address-card"></i><a href="aboutme.html">About me</a></li>
+                    <li class="menu-li"><i class="fa-regular fa-face-smile"></i><a href="myprofile.html">My profile</a></li>
+                    <li class="menu-li"><i class="fa-solid fa-phone"></i><a href="contact.html">Contact</a></li>
                 </ul>
                 <label for="nav__bars" class="bars__box-icon">
                     <i class="fa-solid fa-xmark"></i>
@@ -49,39 +49,13 @@
             </svg>
         </div>
         <div class="grid">
-            <div class="col12" id="body__home">
-                <div class="col6 body__home-index">
-                    <h1 class="home-index__titleone"><Span class="index__title-span">D</Span>
-                        <span class="index__title-span">e</span>
-                        <span class="index__title-span">s</span>
-                        <span class="index__title-span">i</span>
-                        <span class="index__title-span">g</span>
-                        <span class="index__title-span">n</span>
-                        <span class="index__title-span">e</span>
-                        <span class="index__title-span">r</span></h1>
-                    <p class="home-index__pone">Web designer with a passion for <br>
-                    designing clear and functional <br>
-                    websites and user interfaces.<br>
-                    Check out my web design prortfolio.</p>
-                    <img src="./Assets/Img/z4525200166618_0db1466244db18a5d34fcd94ff79f87e.jpg" alt="" class="body__home-img">    
-                </div>
-                <div class="col6 body__home-index">
-                    <h1 class="home-index__titletwo"><span class="index__title-span">C</span>
-                        <span class="index__title-span">o</span>
-                        <span class="index__title-span">d</span>
-                        <span class="index__title-span">e</span>
-                        <span class="index__title-span">r</span></h1>
-                    <p class="home-index__ptwo">Web designer with a passion for <br>
-                        designing clear and functional <br>
-                        websites and user interfaces.<br>
-                        Check out my web design prortfolio.</p>
-                </div>
-            </div>
-            <div class="col12" id="aboutMe">
-                <h1>About me</h1>
-                <div class="aboutMe-form">
-                    <div class="aboutMe-form__profile">
-                        <img src="./Assets/Img/z4525200166618_0db1466244db18a5d34fcd94ff79f87e.jpg" alt="" class="form__profile-i">
+            <div class="col12" id="myProfile">
+                <h1 class="myProfile-title">My profile</h1>
+                <div class="myProfile-form">
+                    <div class="myProfile-form__profile">
+                        <img src="../Assets/Img/z4531318032430_2100fd67afdcdf688dbe68b51a44ec4f.jpg" alt="" class="form__profile-t">
+                        <img src="../Assets//Img/z4531308809098_be8b35f1cf4f73b81d90807f0b32375a.jpg" alt="" class="form__profile-b">
+                        <img src="../Assets/Img/z4531358486476_bee3e76af82384ead963b3ccd21bf910.jpg" alt="" class="form__profile-i">
                         <div class="form-profile__p">
                             <h3>I'm <b>Truong Hoai Linh</b></h3>
                             <div class="form-profile_dis">
@@ -94,12 +68,20 @@
                                 <p class="profile-dis_mar">Trương Hoài Linh</p>
                             </div>
                             <div class="form-profile_dis">
+                                <p>Phone:</p>
+                                <p class="profile-dis_mar">0356381315</p>
+                            </div>
+                            <div class="form-profile_dis">
+                                <p>Email:</p>
+                                <p class="profile-dis_mar">truonghoailinh3103@gmail.com</p>
+                            </div>
+                            <div class="form-profile_dis">
                                 <p>Facebook:</p>
                                 <a href="https://www.facebook.com/thatnghiepmH" class="profile-dis_mar">Trương Hoài Linh</a>
                             </div>
                             <div class="form-profile_dis">
                                 <p>Zalo:</p>
-                                <img src="./Assets/Img/z4527056192673_1c1fd399799b5e0b2f60dbc080e15557.jpg" alt="" class="form__profile-i2 profile-dis_mar">
+                                <img src="../Assets/Img/z4527056192673_1c1fd399799b5e0b2f60dbc080e15557.jpg" alt="" class="form__profile-i2 profile-dis_mar">
                             </div>
                             <div class="form-profile_dis">
                                 <p>Job:</p>
@@ -109,17 +91,32 @@
                                 <p>Birthday:</p>
                                 <p class="profile-dis_mar">29/03/2003</p>
                             </div>
+                            <div class="form-profile_dis">
+                                <p>Address:</p>
+                                <p class="profile-dis_mar">12 Tân Thới Nhất 5, Tân Thới Nhất,<br>
+                                quận 12, TP. Hồ Chí Minh</p>
+                            </div>
                         </div>
                     </div>
+                    <button class="btn__next3"><a href="contact.html"><i class="fa-solid fa-arrow-right"></i></a></button>
+                    <button class="btn__next3_"><a href="aboutme.html"><i class="fa-solid fa-arrow-left"></i></a></button>
                 </div>
             </div>
         </div>
         
     </section>
 
-    <footer class="footer">
-        <div class="grid">
-            isdiduh;od
+    <footer class="footer" id="contact">
+        <div class="footer__box"></div>
+        <div class="grid footer__body">
+            <div class="col12 footer__body-b">
+                <div class="col4 one"></div>
+                <div class="col4 two"></div>
+                <div class="col4 three"></div>
+            </div>
+        </div>
+        <div class="footer__box">
+            <div class="grid"><p style="color: grey; font-size: 0.9em; font-weight: lighter;">© 2023. Tất cả các quyền được bảo lưu.</p></div>
         </div>
     </footer>
 </body>
