@@ -72,6 +72,7 @@
     transform: translateX(-100%);
     opacity: 0;
     transition: all linear 0.4s;
+    z-index: 20;
 }
 .bars__box-nav{
     padding-top: 40px;

@@ -337,6 +337,26 @@ p.profile-dis_mar, a.profile-dis_mar, img.profile-dis_mar{
     font-size: 1.5em;
     padding: 10px;
 }
+@media only screen and (max-width: 46.249em){
+  .myProfile-form__profile{
+    margin-top: 80px;
+  }
+  .form-profile__p{
+    padding-left: 10px;
+    z-index: 0;
+  }
+  .form__profile-i{
+    position: absolute;
+    top: -80px;
+    width: 150px;
+    height: 150px;
+  }
+}
+@media only screen and (min-width: 46.25em) and (max-width: 65em){
+  .myProfile-form__profile{
+    margin-top: 120px;
+  }
+}
 
 /* BANKING */
 #bank h1.bank-title{
@@ -527,7 +547,6 @@ p.profile-dis_mar, a.profile-dis_mar, img.profile-dis_mar{
     position: absolute;
     bottom: 0px;
     left: 30px;
-
   }
 
 /* Vietinbank */
@@ -614,4 +633,37 @@ p.profile-dis_mar, a.profile-dis_mar, img.profile-dis_mar{
   color: white;
   font-size: 1.5em;
   padding: 10px;
+}
+@media only screen and (max-width: 46.249em){
+  #bank{
+    margin-top: 40px;
+  }
+  .bank-tec img{
+    position: absolute;
+    bottom: -10px;
+    left: -15px;
+  }
+  .bank-momo{
+    margin-bottom: 300px;
+  }
+  .bank-viet img{
+    position: absolute;
+    bottom: -100px;
+    right: -10px;
+  }
+}
+@media only screen and (min-width: 46.25em) and (max-width: 65em){
+  #bank{
+    margin-top: 30px;
+  }
+  .bank-tec img{
+    position: absolute;
+    bottom: -10px;
+    left: 0px;
+  }
+  .bank-viet img{
+    position: absolute;
+    bottom: -100px;
+    right: -10px;
+  }
 }
