@@ -16,9 +16,9 @@
         <nav class="nav-group">
             <ul class="group-menu">
                 <li class="menu-li"><a href="index.html">Home</a></li>
-                <li class="menu-li"><a href="aboutme.html">About me</a></li>
-                <li class="menu-li"><a href="myprofile.html">My profile</a></li>
-                <li class="menu-li"><a href="bank.html">Bank</a></li>
+                <li class="menu-li"><a href="./Views/aboutme.html">About me</a></li>
+                <li class="menu-li"><a href="./Views/myprofile.html">My profile</a></li>
+                <li class="menu-li"><a href="./Views/bank.html">Bank</a></li>
             </ul>
         </nav>
         <label for="nav__bars" class="nav__bars">
@@ -30,9 +30,9 @@
             <div class="navbar__body">
                 <ul class="bars__box-nav">
                     <li class="menu-li"><i class="fa-solid fa-house"></i><a href="index.html">Home</a></li>
-                    <li class="menu-li"><i class="fa-regular fa-address-card"></i><a href="aboutme.html">About me</a></li>
-                    <li class="menu-li"><i class="fa-regular fa-face-smile"></i><a href="myprofile.html">My profile</a></li>
-                    <li class="menu-li"><i class="fa-solid fa-money-check-dollar"></i><a href="bank.html">Bank</a></li>
+                    <li class="menu-li"><i class="fa-regular fa-address-card"></i><a href="./Views/aboutme.html">About me</a></li>
+                    <li class="menu-li"><i class="fa-regular fa-face-smile"></i><a href="./Views/myprofile.html">My profile</a></li>
+                    <li class="menu-li"><i class="fa-solid fa-money-check-dollar"></i><a href="./Views/bank.html">Bank</a></li>
                 </ul>
                 <label for="nav__bars" class="bars__box-icon">
                     <i class="fa-solid fa-xmark"></i>
@@ -50,7 +50,7 @@
         </div>
         <div class="grid">
             <div class="col12" id="body__home">
-                <div class="col6 body__home-index">
+                <div class="col6 body__home-index s_col12 m_col6">
                     <h1 class="home-index__titleone"><Span class="index__title-span">S</Span>
                         <span class="index__title-span">k</span>
                         <span class="index__title-span">i</span>
@@ -83,58 +83,59 @@
                     </div>
                     <img src="../Assets/Img/z4531158156495_c145dbf4ba48d5192e89b64029e8a182.jpg" alt="" class="body__home-img">    
                 </div>
-                <div class="col6 body__home-index">
+                <div class="col6 body__home-index s_col12 m_col6">
                     <h1 class="home-index__titletwo"><span class="index__title-span">H</span>
                         <span class="index__title-span">o</span>
                         <span class="index__title-span">b</span>
                         <span class="index__title-span">b</span>
                         <span class="index__title-span">y</span></h1>
-                    <p class="home-index__ptwo">
-                        My hobbies include watching movies, <br>
-                        listening to music and playing games. <br>
-                        I like listening to many genres of music, <br>
-                        but I especially like country tunes that <br>
-                        can make me feel better. Moreover, I like <br>
-                        to watch Chinese adventure films such as <br>
-                        Ma Blow the Lamp, Sha Hai.In addition, I <br>
-                        also enjoy cycling to new places with<br>
-                        delicious food and beautiful scenery.
-                    </p>
-                    <button class="btn__next" title="About me"><a href="aboutme.html"><i class="fa-solid fa-arrow-right"></i></a></button>
+                    <div style="display: flex; justify-content: flex-end;">
+                        <p class="home-index__ptwo">
+                            My hobbies include watching movies,
+                            listening to music and playing games.
+                            I like listening to many genres of music,
+                            but I especially like country tunes that
+                            can make me feel better. Moreover, I like
+                            to watch Chinese adventure films such as
+                            Ma Blow the Lamp, Sha Hai.In addition, I
+                            also enjoy cycling to new places wit
+                            delicious food and beautiful scenery.
+                        </p>
+                    </div>
+                    <button class="btn__next" title="About me"><a href="./Views/aboutme.html"><i class="fa-solid fa-arrow-right"></i></a></button>
                 </div>
             </div>
-        </div>
-        
+        </div>       
     </section>
 
     <footer class="footer" id="contact">
         <div class="footer__box1"></div>
         <div class="grid">
-            <div class="col12 footer__body">
-                <div class="col4 footer__body-b">
+            <div class="footer__body grid_row">
+                <div class="col4 footer__body-b s_col12 m_col6">
                     <h2>Liên hệ</h2>
                     <hr>
                     <div class="footer-form">
                         <ul class="footer-form-ul">
-                            <li class="footer-form-li"><i class="fa-solid fa-location-dot"></i><p>Địa chỉ: 12/9 Tân Thới Nhất 5, Tân Thới Nhất,<br> Quận 12, TP.HCM</p></li>
+                            <li class="footer-form-li"><i class="fa-solid fa-location-dot"></i><p>Địa chỉ: 12/9 Tân Thới Nhất 5, Tân<br> Thới Nhất, Quận 12, TP.HCM</p></li>
                             <li class="footer-form-li"><i class="fa-solid fa-phone"></i><p>Điện thoại: 0356381315</p></li>
                             <li class="footer-form-li"><i class="fa-solid fa-location-dot"></i><p>Email: truonghoailinh3103@gmail.com</p></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col4 footer__body-b">
+                <div class="col4 footer__body-b s_col12 m_col6">
                     <h2>Truy cập nhanh</h2>
                     <hr>
                     <div class="footer-form">
                         <ul class="footer-form-ul">
                             <li class="footer-form-li"><i class="fa-solid fa-house"></i><a href="index.html">Home</a></li>
-                            <li class="footer-form-li"><i class="fa-regular fa-address-card"></i><a href="aboutme.html">About me</a></li>
-                            <li class="footer-form-li"><i class="fa-regular fa-face-smile"></i><a href="myprofile.html">My profile</a></li>
-                            <li class="footer-form-li"><i class="fa-solid fa-money-check-dollar"></i><a href="bank.html">Bank</a></li>
+                            <li class="footer-form-li"><i class="fa-regular fa-address-card"></i><a href="./Views/aboutme.html">About me</a></li>
+                            <li class="footer-form-li"><i class="fa-regular fa-face-smile"></i><a href="./Views/myprofile.html">My profile</a></li>
+                            <li class="footer-form-li"><i class="fa-solid fa-money-check-dollar"></i><a href="./Views/bank.html">Bank</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col4 footer__body-b">
+                <div class="col4 footer__body-b s_col12 m_col6">
                     <h2>Fanpage</h2>
                     <hr>
                     <div class="footer-form">

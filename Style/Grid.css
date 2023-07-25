@@ -1,19 +1,17 @@
 .grid__full-width{
-    max-width: 100%;
-    padding: 0px;
-    display: block;
+    width: 100%;
 }
 /* Đối với PC */
 .grid{
     width: 1200px;
+    max-width: 100%;
     margin: 0px auto;
+    box-sizing: border-box;
 }
-.row{
+.grid_row{
     display: flex;
     flex-wrap: wrap;
     margin: 0px 12px;
-}
-.col{
     padding: 0px 12px;
 }
 .col0{
@@ -67,14 +65,13 @@
     flex: 0 0 100%;
     max-width: 100%;
 }
+
 /* Đối với tablet */
 @media only screen and (min-width: 46.25em) and (max-width: 65em){
-    .row{
+    .grid_row{
         display: flex;
         flex-wrap: wrap;
         margin: 0px 8px;
-    }
-    .col{
         padding: 0px 8px;
     }
     .m_col0{
@@ -131,10 +128,10 @@
 }
 /* Đối với mobile */
 @media only screen and (max-width: 46.249em){
-    .row{
+    .grid_row{
+        display: flex;
+        flex-wrap: wrap;
         margin: 0px 4px;
-    }
-    .col{
         padding: 0px 4px;
     }
     .s_col0{

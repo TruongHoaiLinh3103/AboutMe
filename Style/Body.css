@@ -4,7 +4,7 @@
 }
 #body__home{
     display: flex;
-    margin: 0px 0px 300px 0px;
+    margin: 0px 0px 200px 0px;
 }
 .body__home-index{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -41,8 +41,9 @@
     position: relative;
 }
 .home-index__ptwo{
+    width: 300px;
     display: flex;
-    justify-content: flex-end;
+    flex-wrap: wrap;
     font-size: var(--fontsize-p);
     font-family: cursive;
     text-align: end;
@@ -56,12 +57,12 @@
     border-bottom-right-radius: 30%;
     border-bottom-left-radius: 30%;
 }
-.index__title-span{
+/* .index__title-span{
     transition: all linear 0.2s;
 }
 .index__title-span:hover{
     transform: translateX(20px);
-}
+} */
 .btn__next{
     background-color: rgb(14, 14, 14);
     width: 50px;
@@ -76,6 +77,40 @@
     color: white;
     font-size: 1.5em;
     padding: 10px;
+}
+@media only screen and (min-width: 46.25em) and (max-width: 65em){
+  #body__home{
+    margin: 0px 0px 400px 0px;
+  }
+  .home-index_div{
+    margin-left: 20px;
+  }
+  .home-index__ptwo{
+    margin-right: 20px;
+  }
+  .body__home-img{
+    position: absolute;
+    top: 350px;
+  }
+}
+@media only screen and (max-width: 46.249em){
+  #body__home{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 100px 0px;
+  }
+  .body__home-img{
+    display: none;
+  }
+  .body__home-index + .body__home-index{
+    margin-top: 50px;
+  }
+  .home-index_div{
+    margin-left: 20px;
+  }
+  .home-index__ptwo{
+    margin-right: 20px;
+  }
 }
 
 /* ABOUT ME */
@@ -114,6 +149,7 @@
   color: black;
   font-size: 1.2em;
   text-decoration: none;
+  text-align: center;
 }
 .aboutMe-body{
   height: 500px;
@@ -188,7 +224,14 @@
   padding: 7px 15px;
   font-size: 1em;
 }
+@media only screen and (max-width: 46.249em){
 
+}
+@media only screen and (min-width: 46.25em) and (max-width: 65em){
+  .aboutMe-navbar{
+    height: 280px;
+  }
+}
 /* MY PROFILE */
 #myProfile{
     border-radius: 10px;
@@ -498,7 +541,7 @@ p.profile-dis_mar, a.profile-dis_mar, img.profile-dis_mar{
     flex-direction: column;
     position: relative;
 }
-.col4 h3{
+.bank h3{
     letter-spacing: 3px;
     color: darkgoldenrod;
     filter: drop-shadow(16px 16px 20px red) invert(75%);
@@ -555,5 +598,20 @@ p.profile-dis_mar, a.profile-dis_mar, img.profile-dis_mar{
   height: 200px;
   position: absolute;
   right: 0px;
-  bottom: -5px;
+  bottom: 0px;
+}
+.btn__backlink{
+  background-color: rgb(14, 14, 14);
+    width: 50px;
+    height: 50px;
+    border-radius: 120%;
+    cursor: pointer;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+.btn__backlink a{
+  color: white;
+  font-size: 1.5em;
+  padding: 10px;
 }
