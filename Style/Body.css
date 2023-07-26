@@ -90,7 +90,7 @@
   }
   .body__home-img{
     position: absolute;
-    top: 350px;
+    top: 300px;
   }
 }
 @media only screen and (max-width: 46.249em){
@@ -183,10 +183,53 @@
   border-top-left-radius: 10px;
   position: relative;
 }
+.mucTieuNgheNghiep_body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.mucTieuNgheNghiep_body p, .duAn_body h3{
+  font-size: 1.3em;
+  margin: 0px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.mucTieuNgheNghiep_body img{
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  bottom: -270px;
+  border-radius: 100vh;
+}
 #duAn{
   background-color: rgb(192, 232, 238);
   border-top-right-radius: 10px;
   position: relative;
+}
+.duAn_body{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.duAn_body h3{
+  font-weight: lighter;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.duAn_body h3 a{
+  margin: 0px 5px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.duAn_body iframe{
+  position: absolute;
+  bottom: -370px;
+  border-radius: 20px;
 }
 #kinhNghiem{
   position: relative;
@@ -195,13 +238,34 @@
   background-color: rgb(208, 255, 210);
   border-bottom-left-radius: 10px;
   position: relative;
+  height: 450px;
 }
 #hocVan{
   border-left: darkgreen 3px solid;
   background-color: rgb(238, 235, 192);
   border-bottom-right-radius: 10px;
   position: relative;
+  height: 450px;
 }
+.hocVan_body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 10px;
+  position: relative;
+}
+.hocVan_body p{
+  margin: 10px 0px;
+  font-size: 1.3em;
+  text-align: center;
+}
+.hocVan_body img{
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  bottom: -200px;
+}
+
 .btn__back{
   position: absolute;
   right: 30px;
@@ -214,6 +278,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 100vh;
+  z-index: 1;
 }
 .btn__back:hover{
   background-color: rgb(71, 70, 69);
@@ -225,12 +290,13 @@
   font-size: 1em;
 }
 @media only screen and (max-width: 46.249em){
-
+  
 }
 @media only screen and (min-width: 46.25em) and (max-width: 65em){
   .aboutMe-navbar{
     height: 280px;
   }
+  
 }
 /* MY PROFILE */
 #myProfile{
