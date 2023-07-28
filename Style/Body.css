@@ -234,11 +234,28 @@
 #kinhNghiem{
   position: relative;
 }
-#giaiThuong{
+#hoatDong{
   background-color: rgb(208, 255, 210);
   border-bottom-left-radius: 10px;
   position: relative;
   height: 450px;
+}
+.hoatDong_body{
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hoatDong_body-profile{
+  width: 90%;
+  height: 250px;
+}
+.hoatDong_body-profile ul{
+  padding: 0px;
+}
+.hoatDong_body-profile ul li{
+  list-style: none;
+  
 }
 #hocVan{
   border-left: darkgreen 3px solid;
