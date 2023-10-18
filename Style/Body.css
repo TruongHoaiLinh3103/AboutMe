@@ -2,19 +2,25 @@
 .section{
     margin: auto;
 }
-#body__home{
-    display: flex;
-    margin: 0px 0px 200px 0px;
+.section-body{
+  padding: 50px 0px;
+}
+.body__home{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  justify-content: center;
 }
 .body__home-index{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: var(--my-fontsize);
-    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 .body__home-index h1{
     font-weight: lighter;
     text-align: center;
-    margin: 5px 0px;
+    margin: 5px 20px;
+    letter-spacing: 15px;
 }
 .home-index__titleone{
     color: darkmagenta;
@@ -22,23 +28,14 @@
 .home-index__titletwo{
     color: darkgreen;
 }
-.home-index_div + .home-index_div{
-    margin-top: 10px;
+.home-index_div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 20px;
 }
-.home-index_div p.home-index__pone{
-    display: flex;
-    justify-content: flex-start;
-    font-size: var(--fontsize-p);
-    font-family: cursive;
-    margin: 0px;
-}
-.home-index__hr{
-    width: 300px;
-    background-color: rgb(185, 182, 182);
-    height: 10px;
-    border-radius: 20px;
-    margin-top: 5px;
-    position: relative;
+.home-index__pone{
+    font-size: var(--fontsize-p);    
 }
 .home-index__ptwo{
     width: 300px;
@@ -48,21 +45,24 @@
     font-family: cursive;
     text-align: end;
 }
-.body__home-img{
-    width: 450px;
-    height: 450px;
-    position: absolute;
-    top: 80px;
-    right: -200px;
-    border-bottom-right-radius: 30%;
-    border-bottom-left-radius: 30%;
+.html{
+  color: red;
 }
-/* .index__title-span{
-    transition: all linear 0.2s;
+.css{
+  color: blue;
 }
-.index__title-span:hover{
-    transform: translateX(20px);
-} */
+.sass{
+  color: purple;
+}
+.react{
+  color: rgb(3, 183, 123);
+}
+.firebase{
+  color: rgb(255, 162, 0);
+}
+.body__home-index:nth-child(3){
+  position: relative;
+}
 .btn__next{
     background-color: rgb(14, 14, 14);
     width: 50px;
@@ -78,38 +78,14 @@
     font-size: 1.5em;
     padding: 10px;
 }
-@media only screen and (min-width: 46.25em) and (max-width: 65em){
-  #body__home{
-    margin: 0px 0px 400px 0px;
-  }
-  .home-index_div{
-    margin-left: 20px;
-  }
-  .home-index__ptwo{
-    margin-right: 20px;
-  }
-  .body__home-img{
-    position: absolute;
-    top: 300px;
-  }
+@media only screen and (max-width: 89.9374em){
+  
 }
-@media only screen and (max-width: 46.249em){
-  #body__home{
-    display: flex;
-    flex-direction: column;
-    margin: 0px 0px 100px 0px;
-  }
-  .body__home-img{
-    display: none;
-  }
-  .body__home-index + .body__home-index{
-    margin-top: 50px;
-  }
-  .home-index_div{
-    margin-left: 20px;
-  }
-  .home-index__ptwo{
-    margin-right: 20px;
+@media only screen and (max-width: 78.9375em){
+}
+@media only screen and (max-width : 46.1875em){
+  .body__home{
+    grid-template-columns: 100%;
   }
 }
 
@@ -334,34 +310,34 @@
     font-size: var(--my-fontsize);
 }
 .myProfile-form{
-    margin-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
 }
 .myProfile-form__profile{
-    width: 700px;
-    height: 600px;
+    width: 100%;
+    padding: 20px;
     background-color: #fefefe;
     border-radius: 20px;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 40% 60%;
     align-items: center;
     position: relative;
     border-top: outset;
     border-left: outset;
+    margin-top: 50px;
 }
 .form__profile-i{
-    width: 250px;
-    height: 350px;
-    border-radius: 10px;
-    border: solid rgb(85, 85, 85) 3px;
-    box-shadow: 5px 3px 3px rgb(134, 240, 96);;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    cursor: zoom-in;
+    transition: .3s ease-in-out all;
 }
-.form__profile-t{
-    position: absolute;
-    top: -160px;
+.form__profile-i:hover{
+  transform: scale(1.2);
 }
 .form__profile-b{
     position: absolute;
@@ -370,25 +346,42 @@
     height: 120px;
     right: 0px;
 }
+.form-profile__p{
+  margin: 0px 20px;
+}
 .form-profile__p h3{
     font-weight: lighter;
     letter-spacing: 5px;
     font-size: 1.5em;
+    text-align: center;
+    padding-bottom: 30px;
+    margin: 20px 0px;
 }
 .form-profile_dis{
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .form-profile_dis p{
-    margin: 10px 0px;
+    margin: 20px 0px;
     letter-spacing: 2px;
     z-index: 1;
+    text-align: center;
 }
 .form__profile-i2{
     height: 70px;
 }
 p.profile-dis_mar, a.profile-dis_mar, img.profile-dis_mar{
-    margin-left: 20px;
+    margin: 0px 20px 0px 10px;
+}
+a.profile-dis_mar, .profile-dis_mar a{
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.profile-dis_mar a{
+  justify-content: flex-end;
 }
 .btn__next3{
     background-color: rgb(14, 14, 14);
@@ -396,48 +389,35 @@ p.profile-dis_mar, a.profile-dis_mar, img.profile-dis_mar{
     height: 50px;
     border-radius: 120%;
     cursor: pointer;
-    position: absolute;
-    right: 120px;
-    bottom: 274px;
+}
+.btn__next3 + .btn__next3{
+  margin-left: 20px;
 }
 .btn__next3 a{
     color: white;
     font-size: 1.5em;
     padding: 10px;
 }
-.btn__next3_{
-    background-color: rgb(14, 14, 14);
-    width: 50px;
-    height: 50px;
-    border-radius: 120%;
-    cursor: pointer;
-    position: absolute;
-    left: 120px;
-    bottom: 274px;
+@media only screen and (max-width: 89.9374em){
+  
 }
-.btn__next3_ a{
-    color: white;
-    font-size: 1.5em;
-    padding: 10px;
+@media only screen and (max-width: 78.9375em){
 }
-@media only screen and (max-width: 46.249em){
-  .myProfile-form__profile{
+@media only screen and (max-width : 46.1875em){
+  /* .myProfile-form__profile{
     margin-top: 80px;
   }
   .form-profile__p{
     padding-left: 10px;
     z-index: 0;
-  }
+  } */
   .form__profile-i{
-    position: absolute;
-    top: -80px;
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
+    text-align: center;
   }
-}
-@media only screen and (min-width: 46.25em) and (max-width: 65em){
   .myProfile-form__profile{
-    margin-top: 120px;
+    grid-template-columns: 100%;
   }
 }
 

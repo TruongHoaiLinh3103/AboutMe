@@ -6,11 +6,6 @@
     outline: none;
     position: relative;
 }
-.footer__box1{
-    width: 100%;
-    background-image: url(../Assets/Img/stacked-waves-haikei.png);
-    height: 30px;
-}
 .footer__box2{
     width: 100%;
     background-color: rgb(250, 248, 248);
