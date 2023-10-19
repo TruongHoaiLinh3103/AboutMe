@@ -123,6 +123,7 @@
   display: grid;
   grid-template-columns: 30% 69%;
   gap: 1%;
+  padding: 50px 0px;
 }
 .about-navbar{
   background-color: #fff2;
@@ -135,6 +136,10 @@
   list-style: none;
   text-align: center;
   padding: 10px 0px;
+  color: var(--color);
+  font-size: 20px;
+  cursor: pointer;
+  user-select: none;
 }
 .about-navbar ul:hover li:not(:hover){
   filter: blur(10px);
@@ -142,12 +147,6 @@
 }
 .about-navbar ul li + li{
   margin-top: 30px;
-}
-.about-navbar ul li a{
-  text-decoration: none;
-  color: var(--color);
-  font-size: 20px;
-  cursor: pointer;
 }
 .about-box{
   background-color: #fff2;
@@ -182,7 +181,7 @@
 .Personalproject-containers{
   scroll-snap-align: start;
   min-height: 350px;
-  min-width: 1200px;
+  min-width: 2000px;
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
