@@ -1,6 +1,11 @@
 /* HOME */
 .section{
-    margin: auto;
+  margin: auto;
+  background-image: url('https://i.pinimg.com/originals/2c/84/5a/2c845a66b8ad2a8aafd288bdc16cd459.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(20%);
+  overflow: hidden;
 }
 .section-body{
   padding: 50px 0px;
@@ -23,10 +28,10 @@
     letter-spacing: 15px;
 }
 .home-index__titleone{
-    color: darkmagenta;
+    color: var(--color);
 }
 .home-index__titletwo{
-    color: darkgreen;
+  color: var(--color);
 }
 .home-index_div{
   display: flex;
@@ -35,7 +40,8 @@
   margin: 0px 20px;
 }
 .home-index__pone{
-    font-size: var(--fontsize-p);    
+    font-size: var(--fontsize-p);
+    color: var(--color);
 }
 .home-index__ptwo{
     width: 300px;
@@ -44,6 +50,7 @@
     font-size: var(--fontsize-p);
     font-family: cursive;
     text-align: end;
+    color: var(--color);
 }
 .html{
   color: red;
@@ -52,13 +59,33 @@
   color: blue;
 }
 .sass{
-  color: purple;
+  color: rgb(255, 0, 255);
 }
 .react{
-  color: rgb(3, 183, 123);
+  color: rgb(5, 255, 55);
+}
+.git, .github{
+  color: white;
 }
 .firebase{
   color: rgb(255, 162, 0);
+}
+.body__home-img{
+  background-color: #fff5;
+  border-radius: 100vh;
+  border: 1px solid white;
+  animation: circle infinite linear 10s;
+}
+@keyframes circle {
+  0%{
+    transform: rotate(0turn);
+  }
+  50%{
+    transform: rotate(0.5turn);
+  }
+  100%{
+    transform: rotate(0turn);
+  }
 }
 .body__home-index:nth-child(3){
   position: relative;
@@ -69,9 +96,6 @@
     height: 50px;
     border-radius: 120%;
     cursor: pointer;
-    position: absolute;
-    right: 120px;
-    bottom: -50px;
 }
 .btn__next a{
     color: white;
@@ -87,209 +111,119 @@
   .body__home{
     grid-template-columns: 100%;
   }
+  .section{
+    background-image: url("https://i.pinimg.com/originals/00/28/da/0028da287050713fcdff148997549325.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 /* ABOUT ME */
-#aboutMe{
-  height: auto;
-  display: flex;
-  justify-content: center;
+.about-body{
+  display: grid;
+  grid-template-columns: 30% 69%;
+  gap: 1%;
 }
-.aboutMetitle{
-  font-size: var(--my-fontsize);
-  color: darkgreen;
-  letter-spacing: 10px;
+.about-navbar{
+  background-color: #fff2;
+  box-shadow: 4px 4px 5px -1px rgba(0, 0, 0, 0.59);
 }
-.aboutMe-navbar{
-  height: 260px;
-  border: 1px outset;
+.about-navbar ul{
+  padding-left: 0px;
 }
-.navbar_nav-ul{
-  padding: 0px;
-}
-.nav-ul_li{
+.about-navbar ul li{
   list-style: none;
-  display: flex;
-  justify-content: center;
+  text-align: center;
   padding: 10px 0px;
+}
+.about-navbar ul:hover li:not(:hover){
+  filter: blur(10px);
+  transition: ease-in-out .3s all;
+}
+.about-navbar ul li + li{
+  margin-top: 30px;
+}
+.about-navbar ul li a{
+  text-decoration: none;
+  color: var(--color);
+  font-size: 20px;
   cursor: pointer;
 }
-.navbar_nav-ul:hover .nav-ul_li:not(:hover){
-  opacity: 0.5;
+.about-box{
+  background-color: #fff2;
+  box-shadow: -4px 4px 5px -1px rgba(0, 0, 0, 0.59);
 }
-.nav-ul_li + .nav-ul_li{
-  margin-top: 5px;
-  border-top: 1px solid darkmagenta;
-}
-.nav-ul_li a{
-  color: black;
-  font-size: 1.2em;
-  text-decoration: none;
+#Introduceyourself h3, #Careergoals h3,
+#Personalproject h3, #Workexperience h3{
+  color: var(--color);
+  font-size: 30px;
   text-align: center;
 }
-.aboutMe-body{
-  height: 500px;
-  /* background-color: yellow; */
-  margin-left: 5px;
-  position: relative;
-  display: flex;
-  justify-content: space-around;
+#Introduceyourself p, #Careergoals p,
+#Workexperience p{
+  color: var(--color);
+  font-size: 20px;
 }
-.title-title{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.aboutMe-body_title{
- margin: 20px 0px 0px 0px;
- color: black;
-}
-.aboutMe-body_hr{
-  width: 100px;
-  background-color: rgb(41, 253, 101);
-  border-radius: 30px;
-  height: 3px;
-  border: none;
-}
-.aboutMe-section_1{
-  height: 500px;
-}
-#mucTieuNgheNghiep{
-  background-color: #feeaea;
-  border-top-left-radius: 10px;
-  position: relative;
-}
-.mucTieuNgheNghiep_body{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-.mucTieuNgheNghiep_body p, .duAn_body h3{
-  font-size: 1.3em;
-  margin: 0px 20px;
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-}
-.mucTieuNgheNghiep_body img{
-  width: 250px;
-  height: 250px;
-  position: absolute;
-  bottom: -270px;
-  border-radius: 100vh;
-}
-#duAn{
-  background-color: rgb(192, 232, 238);
-  border-top-right-radius: 10px;
-  position: relative;
-}
-.duAn_body{
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.duAn_body h3{
-  font-weight: lighter;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.duAn_body h3 a{
-  margin: 0px 5px;
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
-.duAn_body iframe{
-  position: absolute;
-  bottom: -370px;
-  border-radius: 20px;
-}
-#kinhNghiem{
-  position: relative;
-}
-#hoatDong{
-  background-color: rgb(208, 255, 210);
-  border-bottom-left-radius: 10px;
-  position: relative;
-  height: 450px;
-}
-.hoatDong_body{
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.hoatDong_body-profile{
-  width: 90%;
-  height: 250px;
-}
-.hoatDong_body-profile ul{
-  padding: 0px;
-}
-.hoatDong_body-profile ul li{
-  list-style: none;
-  
-}
-#hocVan{
-  border-left: darkgreen 3px solid;
-  background-color: rgb(238, 235, 192);
-  border-bottom-right-radius: 10px;
-  position: relative;
-  height: 450px;
-}
-.hocVan_body{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0px 10px;
-  position: relative;
-}
-.hocVan_body p{
-  margin: 10px 0px;
-  font-size: 1.3em;
-  text-align: center;
-}
-.hocVan_body img{
-  position: absolute;
-  width: 300px;
-  height: 200px;
-  bottom: -200px;
+.Personalproject-container{
+  display: grid;
+  grid-auto-flow: column;
+  scroll-behavior: auto;
+  gap: 1.2rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
 }
 
-.btn__back{
-  position: absolute;
-  right: 30px;
-  bottom: 30px;
-  border: none;
-  background-color: rgb(247, 117, 117);
-  height: 25px;
-  width: 25px;
+.Personalproject-container::-webkit-scrollbar{
+  display: none;
+}
+.Personalproject-containers{
+  scroll-snap-align: start;
+  min-height: 350px;
+  min-width: 1200px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 100vh;
+  align-items: flex-end;
+  justify-content: flex-start;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(20%);
+  transition: 0.3s ease-in-out;
+  position: relative;
   z-index: 1;
 }
-.btn__back:hover{
-  background-color: rgb(71, 70, 69);
-  transition: all linear 0.3s;
+.Personalproject-box{
+  background-color: black;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
 }
-.btn__back a{
-  color: white;
-  padding: 7px 15px;
-  font-size: 1em;
+.Personalproject-box +
+.Personalproject-box{
+  margin-left: 30px;
 }
-@media only screen and (max-width: 46.249em){
+.Personalproject-title,
+.Personalproject-experience,
+.Personalproject-item{
+  color: var(--color);
+  display: flex;
+}
+.Personalproject-item p a{
+  text-decoration: none;
+  color: aqua;
+}
+@media only screen and (max-width: 89.9374em){
   
 }
-@media only screen and (min-width: 46.25em) and (max-width: 65em){
-  .aboutMe-navbar{
-    height: 280px;
-  }
-  
+@media only screen and (max-width: 78.9375em){
+
+}
+@media only screen and (max-width : 46.1875em){
+
 }
 /* MY PROFILE */
 #myProfile{
@@ -298,7 +232,7 @@
 }
 #myProfile h1, #aboutMe h1, #bank h1{
     margin: 0px;
-    color: black;
+    color: var(--color);
     font-size: var(--my-fontsize);
     letter-spacing: 2px;
     padding-left: 20px;
@@ -306,7 +240,7 @@
 }
 #myProfile h1.myProfile-title{
     letter-spacing: 10px;
-    color: darkmagenta;
+    color: var(--color);
     font-size: var(--my-fontsize);
 }
 .myProfile-form{
@@ -318,15 +252,15 @@
 .myProfile-form__profile{
     width: 100%;
     padding: 20px;
-    background-color: #fefefe;
+    background-color: #fff2;
     border-radius: 20px;
     display: grid;
     grid-template-columns: 40% 60%;
     align-items: center;
-    position: relative;
     border-top: outset;
     border-left: outset;
     margin-top: 50px;
+    box-shadow: 4px 4px 5px -1px rgba(0, 0, 0, 0.59);
 }
 .form__profile-i{
     width: 100%;
@@ -339,15 +273,8 @@
 .form__profile-i:hover{
   transform: scale(1.2);
 }
-.form__profile-b{
-    position: absolute;
-    bottom: 0px;
-    width: 120px;
-    height: 120px;
-    right: 0px;
-}
 .form-profile__p{
-  margin: 0px 20px;
+  margin-left: 10px;
 }
 .form-profile__p h3{
     font-weight: lighter;
@@ -356,6 +283,7 @@
     text-align: center;
     padding-bottom: 30px;
     margin: 20px 0px;
+    color: var(--color);
 }
 .form-profile_dis{
     display: flex;
@@ -366,7 +294,8 @@
     margin: 20px 0px;
     letter-spacing: 2px;
     z-index: 1;
-    text-align: center;
+    text-align: right;
+    color: var(--color);
 }
 .form__profile-i2{
     height: 70px;
@@ -376,9 +305,14 @@ p.profile-dis_mar, a.profile-dis_mar, img.profile-dis_mar{
 }
 a.profile-dis_mar, .profile-dis_mar a{
   text-decoration: none;
-  text-align: center;
+  text-align: right;
   display: flex;
   flex-wrap: wrap;
+  color: var(--color);
+}
+a.profile-dis_mar:hover, .profile-dis_mar a:hover{
+  color: black;
+  transition: all ease-in-out .4s;
 }
 .profile-dis_mar a{
   justify-content: flex-end;
@@ -404,13 +338,6 @@ a.profile-dis_mar, .profile-dis_mar a{
 @media only screen and (max-width: 78.9375em){
 }
 @media only screen and (max-width : 46.1875em){
-  /* .myProfile-form__profile{
-    margin-top: 80px;
-  }
-  .form-profile__p{
-    padding-left: 10px;
-    z-index: 0;
-  } */
   .form__profile-i{
     width: 250px;
     height: 250px;
@@ -422,21 +349,22 @@ a.profile-dis_mar, .profile-dis_mar a{
 }
 
 /* BANKING */
+#bank{
+  padding: 50px 0px;
+}
 #bank h1.bank-title{
     letter-spacing: 10px;
-    color: darkgreen;
+    color: var(--color);
     font-size: var(--my-fontsize);
     margin-bottom: 20px;
 }
 .bank{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    margin-bottom: 150px;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 /* Techcombank */
 .bank-tec{
-    height: 350px;
+    padding: 50px 0px;
     border-bottom: 3px solid darkmagenta;
     display: flex;
     justify-content: center;
@@ -601,9 +529,11 @@ a.profile-dis_mar, .profile-dis_mar a{
   }
   .bank-space-martb{
     margin: 0px;
+    color: var(--color);
   }
   .bank-space-mar{
     margin: 0px 0px 0px 10px;
+    color: var(--color);
   }
   .bank-tec img{
     width: 100px;
@@ -614,8 +544,7 @@ a.profile-dis_mar, .profile-dis_mar a{
 
 /* Vietinbank */
 .bank-viet{
-    height: 350px;
-    margin-top: -150px;
+    padding: 50px 0px;
     border-top: 3px solid darkgreen;
     display: flex;
     justify-content: center;
@@ -625,108 +554,39 @@ a.profile-dis_mar, .profile-dis_mar a{
 }
 .bank h3{
     letter-spacing: 3px;
-    color: darkgoldenrod;
-    filter: drop-shadow(16px 16px 20px red) invert(75%);
+    color: var(--color);
     position: absolute;
     top: -10px;
     left: 20px;
 }
-.bank-viet img{
-  width: 150px;
-  position: absolute;
-  bottom: -30px;
-  right: -20px;
+@media only screen and (max-width: 89.9374em){
+  
 }
-
-/* Momo */
-.bank-momo{
-    height: 200px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.bank-momo .bank-bank{
-  margin-top: 0px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.bank-momo .bank-bank .bank-bank-space:nth-child(1){
-  display: flex;
-  flex-direction: column;
-  margin-right: 20px;
-}
-.bank-momo .bank-bank .bank-bank-space:nth-child(2){
-  margin-top: 175px;
-}
-.bank-bank-space img{
-  width: 200px;
-  height: 200px;
-}
-.no-display{
-  display: flex;
-  flex-direction: column;
-}
-
-/* Qr bank */
-.bank-qr{
-    height: 200px;
-    border-left: 1px solid transparent;
-    position: relative;
-}
-.bank-qr img {
-  width: 250px;
-  height: 200px;
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
-}
-.btn__backlink{
-  background-color: rgb(14, 14, 14);
-    width: 50px;
-    height: 50px;
-    border-radius: 120%;
-    cursor: pointer;
+@media only screen and (max-width: 78.9375em){
+  .bank-tec img{
     position: absolute;
+    bottom: -10px;
     left: 0px;
-    bottom: 0px;
-}
-.btn__backlink a{
-  color: white;
-  font-size: 1.5em;
-  padding: 10px;
-}
-@media only screen and (max-width: 46.249em){
-  #bank{
-    margin-top: 40px;
   }
+  .bank-viet img{
+    position: absolute;
+    bottom: -100px;
+    right: -10px;
+  }
+}
+@media only screen and (max-width : 46.1875em){
   .bank-tec img{
     position: absolute;
     bottom: -10px;
     left: -15px;
   }
-  .bank-momo{
-    margin-bottom: 300px;
-  }
   .bank-viet img{
     position: absolute;
     bottom: -100px;
     right: -10px;
   }
-}
-@media only screen and (min-width: 46.25em) and (max-width: 65em){
-  #bank{
-    margin-top: 30px;
-  }
-  .bank-tec img{
-    position: absolute;
-    bottom: -10px;
-    left: 0px;
-  }
-  .bank-viet img{
-    position: absolute;
-    bottom: -100px;
-    right: -10px;
+  .bank{
+    grid-template-columns: 100%;
+    row-gap: 30px;
   }
 }

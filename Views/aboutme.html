@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <title>Profile</title>
+    <script src="../js/about.js" defer></script>
 </head>
 <body class="body">
     <header class="header">
@@ -47,100 +48,96 @@
     </header>
 
     <section class="section">
-        <div class="custom-shape-divider-bottom-1689592004">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
-                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
-                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
-            </svg>
-        </div>
-        <div class="grid">
-            <h1 class="aboutMetitle">About me</h1>
-            <div class="row">
-                <div class="col12" id="aboutMe">
-                    <div class="col2 aboutMe-navbar s_col0">
-                        <nav class="aboutMe-navbar_nav">
-                            <ul class="navbar_nav-ul">
-                                <li class="nav-ul_li"><a href="#mucTieuNgheNghiep">Mục tiêu nghề nghiệp</a></li>
-                                <li class="nav-ul_li"><a href="#hocVan">Học vấn</a></li>
-                                <li class="nav-ul_li"><a href="#kinhNghiem">Kinh nghiệm</a></li>
-                                <li class="nav-ul_li"><a href="#hoatDong">Hoạt động</a></li>
-                                <li class="nav-ul_li"><a href="#duAn">Dự án</a></li>
-                            </ul>
-                        </nav>
+        <div class="about-body grid">
+            <div class="about-navbar">
+                <ul>
+                    <li><a href="#Introduceyourself" onclick={checkIntroduceyourself()}>Introduce yourself</a></li>
+                    <li><a href="#Careergoals" onclick={checkCareergoals()}>Career goals</a></li>
+                    <li><a href="#Personalproject" onclick={checkPersonalproject()}>Personal project</a></li>
+                    <li><a href="#Workexperience" onclick={checkWorkexperience()}>Work experience</a></li>
+                    <div style="display: flex; justify-content: center; align-items: center; margin: 30px 0px; flex-direction: column;">
+                        <button class="btn__next3" title="Home"><a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a></button>
+                        <p style="margin: 0px 20px; font-size: 25px; font-weight: bold; color: var(--color);">2/4</p>
+                        <button class="btn__next3" title="Profile"><a href="myprofile.html"><i class="fa-solid fa-arrow-right"></i></a></button>
                     </div>
-                    <div class="col10 aboutMe-section s_col12">
-                        <div class="aboutMe-body">
-                            <div class="col6" id="mucTieuNgheNghiep">
-                                <div class="title-title">
-                                    <h3 class="aboutMe-body_title">Mục tiêu</h3>
-                                    <hr class="aboutMe-body_hr">
-                                    <button class="btn__back"><a href="aboutme.html"><i class="fa-solid fa-arrow-up"></i></a></button>
+                </ul>
+            </div>
+            <div class="about-box">
+                <div style="margin: 20px;">
+                    <div id="Introduceyourself">
+                        <h3>Introduce yourself</h3>
+                        <p>I am Linh. I was born on March 29, 2003 in a small village in Binh Dinh province. I grew up in Binh Dinh but I moved to Ho Chi Minh City last year. My hobbies are reading stories and watching movies, especially horror movies. In addition, I also have a passion for art, which is calligraphy.</p>
+                        <p>Everyone says I am a hard-working and sociable student. My strengths are creativity and principles. But what I don't do well is lack of confidence. I hope we can help each other in our work, thank you everyone.</p>
+                    </div>
+                    <div id="Careergoals" style="display: none;">
+                        <h3>Career goals</h3>
+                        <p>By applying and developing skills, experience and knowledge to become a content creation expert that brings value to businesses.</p>
+                    </div>
+                    <div id="Personalproject" style="display: none;">
+                        <h3>Personal project</h3>
+                        <div class="Personalproject-container">
+                            <div class="Personalproject-containers">
+                                <div class="Personalproject-box">
+                                    <div class="Personalproject-title">
+                                        <p><b>Name of project:</b></p>
+                                        <p style="margin-left: 10px;">ETC</p>
+                                    </div>
+                                    <div class="Personalproject-item">
+                                        <p><b>Activity duration:</b></p>
+                                        <p style="margin-left: 10px;">20 days</p>
+                                    </div>
+                                    <div class="Personalproject-item">
+                                        <p><b>Technology:</b></p>
+                                        <p style="margin-left: 10px;">Html, Css, Reactjs(Class Components), Use Firebase to deploy</p>
+                                    </div>
+                                    <div class="Personalproject-item">
+                                        <p><b>Link code:</b></p>
+                                        <p style="margin-left: 10px;"><a href="https://github.com/TruongHoaiLinh3103/etc">https://github.com/TruongHoaiLinh3103/etc</a></p>
+                                    </div>
+                                    <div class="Personalproject-item">
+                                        <p><b>Deploy:</b></p>
+                                        <p style="margin-left: 10px;"><a href="https://etc2023-8e1aa.firebaseapp.com/?_gl=1*1lnxa8k*_ga*MTc2NDY1MjAzMy4xNjk0Mzk3ODQ2*_ga_CW55HF8NVT*MTY5NzcwMDIwNS4yMS4xLjE2OTc3MDAyMjcuMzguMC4w#/">etc2023-8e1aa.web.app</a></p>
+                                    </div>
+                                    <div class="Personalproject-experience">
+                                        <p><b>Experience:</b></p>
+                                        <p style="margin-left: 10px;">Understand more about class components</p>
+                                    </div>
                                 </div>
-                                <div class="mucTieuNgheNghiep_body">
-                                    <p>Bằng cách vận dụng và phát triển các kỹ năng, kinh nghiệm và kiến thức
-                                        để trở thành một chuyên gia sáng tạo nội dung mang lại giá trị cho doanh nghiệp.
-                                    </p>
-                                    <img src="../Assets/Img/1206-1_preview_rev_1.png" alt="" class="s_col0">
-                                </div>
-                            </div>
-                            <div class="col6" id="duAn">
-                                <div class="title-title">
-                                    <h3 class="aboutMe-body_title">Dự án</h3>
-                                    <hr class="aboutMe-body_hr">
-                                    <button class="btn__back"><a href="aboutme.html"><i class="fa-solid fa-arrow-up"></i></a></button>
-                                </div>
-                                <div class="duAn_body">
-                                    <h3>Click vào <a href="https://github.com/TruongHoaiLinh3103/">đây</a> để xem các dự án cá nhân</h3>
-                                    <iframe width="300" height="350" src="https://www.youtube.com/embed/LqvmiEIaYrY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="s_col0"></iframe>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col12 aboutMe-section_1" id="kinhNghiem">
-                            <div class="title-title">
-                                <h3 class="aboutMe-body_title">Kinh nghiệm làm việc</h3>
-                                <hr class="aboutMe-body_hr">
-                                <button class="btn__back"><a href="aboutme.html"><i class="fa-solid fa-arrow-up"></i></a></button>
-                            </div>
-                        </div>
-                        <div class="aboutMe-body">
-                            <div class="col6" id="hoatDong">
-                                <div class="title-title">
-                                    <h3 class="aboutMe-body_title">Hoạt động</h3>
-                                    <hr class="aboutMe-body_hr">
-                                    <button class="btn__back"><a href="aboutme.html"><i class="fa-solid fa-arrow-up"></i></a></button>
-                                </div>
-                                <div class="hoatDong_body">
-                                    <div class="hoatDong_body-profile">
-                                        <ul>
-                                            <li><h3>Hoạt động thiện nguyện tại chùa</h3></li>
-                                            <li><h3>Tổ đội phát triển những website cho đội bán hàng tịa trường học</h3></li>
-                                            <li></li>
-                                        </ul>
+                                <div class="Personalproject-box">
+                                    <div class="Personalproject-title">
+                                        <p><b>Name of project:</b></p>
+                                        <p style="margin-left: 10px;">Kensho</p>
+                                    </div>
+                                    <div class="Personalproject-item">
+                                        <p><b>Activity duration:</b></p>
+                                        <p style="margin-left: 10px;">20 days</p>
+                                    </div>
+                                    <div class="Personalproject-item">
+                                        <p><b>Technology:</b></p>
+                                        <p style="margin-left: 10px;">Html, Css, Reactjs(Hooks Components), Use Firebase to deploy</p>
+                                    </div>
+                                    <div class="Personalproject-item">
+                                        <p><b>Link code:</b></p>
+                                        <p style="margin-left: 10px;"><a href="https://github.com/TruongHoaiLinh3103/kensho">https://github.com/TruongHoaiLinh3103/kensho</a></p>
+                                    </div>
+                                    <div class="Personalproject-item">
+                                        <p><b>Deploy:</b></p>
+                                        <p style="margin-left: 10px;"><a href="https://kensho2023-e7ac3.web.app/#/">kensho2023-e7ac3.web.app</a></p>
+                                    </div>
+                                    <div class="Personalproject-experience">
+                                        <p><b>Experience:</b></p>
+                                        <p style="margin-left: 10px;">Understand more about hooks components</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col6" id="hocVan">
-                                <div class="title-title">
-                                    <h3 class="aboutMe-body_title">Học vấn</h3>
-                                    <hr class="aboutMe-body_hr">
-                                    <button class="btn__back"><a href="aboutme.html"><i class="fa-solid fa-arrow-up"></i></a></button>
-                                </div>
-                                <div class="hocVan_body">
-                                    <p><b>Trường cao đẳng Sài Gòn</b><span style="margin: 0px 10px;">/</span>2022 - 2025</p>
-                                    <p>Khoa: Công nghệ thông tin</p>
-                                    <p>Tốt nghiệp loại khá, điểm trung bình 8.0</p>
-                                    <img src="../Assets/Img/channels4_profile_preview_rev_1.png" alt="" class="s_col0">
-                                </div>
-                            </div>
                         </div>
                     </div>
-                    <button class="btn__next3 s_col0 m_col0" title="My profile"><a href="myprofile.html"><i class="fa-solid fa-arrow-right"></i></a></button>
-                    <p style="margin: 0px 20px; font-size: 25px; font-weight: bold;">2/4</p>
-                    <button class="btn__next3 s_col0 m_col0" title="Home"><a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a></button>
+                    <div id="Workexperience" style="display: none;">
+                        <h3>Work experience</h3>
+                    </div>
                 </div>
             </div>
-        </div>    
+        </div>
     </section>
 
     <footer class="footer" id="contact">
