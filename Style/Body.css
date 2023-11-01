@@ -153,13 +153,13 @@
   box-shadow: -4px 4px 5px -1px rgba(0, 0, 0, 0.59);
 }
 #Introduceyourself h3, #Careergoals h3,
-#Personalproject h3, #Workexperience h3{
+#Personalproject h3, #Workexperience h3, #Education h3{
   color: var(--color);
   font-size: 30px;
   text-align: center;
 }
 #Introduceyourself p, #Careergoals p,
-#Workexperience p{
+#Workexperience p, #Education p{
   color: var(--color);
   font-size: 20px;
 }
