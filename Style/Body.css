@@ -1,7 +1,7 @@
 /* HOME */
 .section{
   margin: auto;
-  background-image: url('https://pdp.edu.vn/wp-content/uploads/2021/01/hinh-nen-4k-tuyet-dep-cho-may-tinh.jpg');
+  background-image: url('https://gvn360.com/wp-content/uploads/2020/07/Gearvn_v%C5%A9-tr%E1%BB%A5-m%E1%BB%9Bi_-19-1-scaled.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   filter: grayscale(20%);
@@ -71,9 +71,7 @@
   color: rgb(95, 152, 238);
 }
 .body__home-img{
-  background-color: #fff5;
   border-radius: 100vh;
-  border: 1px solid white;
   animation: circle infinite linear 10s;
 }
 @keyframes circle {
@@ -136,9 +134,8 @@
   cursor: pointer;
   user-select: none;
 }
-.about-navbar ul:hover li:not(:hover){
-  filter: blur(10px);
-  transition: ease-in-out .3s all;
+.active{
+  filter: blur(2px);
 }
 .about-navbar ul li + li{
   margin-top: 30px;
