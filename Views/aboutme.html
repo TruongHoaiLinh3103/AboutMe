@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <title>Profile</title>
     <script src="../js/about.js" defer></script>
+
 </head>
 <body class="body">
     <header class="header">
@@ -62,7 +63,6 @@
                     <li onclick={checkCareergoals()}>Career goals</li>
                     <li onclick={checkPersonalproject()}>Personal project</li>
                     <li onclick={checkWorkexperience()}>Work experience</li>
-                    <li onclick={checkEducation()}>Education</li>
                     <div style="display: flex; justify-content: center; align-items: center; margin: 30px 0px; flex-direction: column;">
                         <button class="btn__next3" title="Home"><a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a></button>
                         <p style="margin: 0px 20px; font-size: 25px; font-weight: bold; color: var(--color);">2/4</p>
@@ -79,7 +79,7 @@
                     </div>
                     <div id="Careergoals" style="display: none;">
                         <h3>Career goals</h3>
-                        <p>Short-term: Within the next 5 months, mastering nodejs must reach an advanced level.</p>
+                        <p>Short-term: Within the next 2 years, Frontity mastery should reach an advanced level.</p>
                         <p>Long-term: By applying and developing skills, experience and knowledge to become a content creation expert that brings value to businesses.</p>
                     </div>
                     <div id="Personalproject" style="display: none;">
@@ -138,38 +138,11 @@
                                         <p style="margin-left: 10px;">Understand more about hooks components, can use hooks: useContext, useState, useEffect, useRef + React-router-dom, Axios, Redux</p>
                                     </div>
                                 </div>
-                                <div class="Personalproject-box">
-                                    <div class="Personalproject-title">
-                                        <p><b>Name of project:</b></p>
-                                        <p style="margin-left: 10px;">ChatBoxLQ</p>
-                                    </div>
-                                    <div class="Personalproject-item">
-                                        <p><b>Activity duration:</b></p>
-                                        <p style="margin-left: 10px;">20 days</p>
-                                    </div>
-                                    <div class="Personalproject-item">
-                                        <p><b>Technology:</b></p>
-                                        <p style="margin-left: 10px;">Html, Css, Reactjs(Hooks Components, Class Components)</p>
-                                    </div>
-                                    <div class="Personalproject-item">
-                                        <p><b>Link code:</b></p>
-                                        <p style="margin-left: 10px;"><a href="https://github.com/TruongHoaiLinh3103/boxChatLQ">https://github.com/TruongHoaiLinh3103/boxChatLQ</a></p>
-                                    </div>
-                                    <div class="Personalproject-experience">
-                                        <p><b>Experience:</b></p>
-                                        <p style="margin-left: 10px;">Server basic(CRUD in RESTfulAPI) => Node.js</p>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
                     <div id="Workexperience" style="display: none;">
                         <h3>Work experience</h3>
-                    </div>
-                    <div id="Education" style="display: none;">
-                        <h3>Education</h3>
-                        <p>Saigon College(2022 - 2025)</p>
-                        <p>Chuyên ngành: Công nghệ thông tin</p>
                     </div>
                 </div>
             </div>

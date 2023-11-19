@@ -67,8 +67,8 @@
 .git, .github{
   color: white;
 }
-.firebase{
-  color: rgb(255, 162, 0);
+.wpress{
+  color: rgb(95, 152, 238);
 }
 .body__home-img{
   background-color: #fff5;
@@ -181,7 +181,7 @@
 .Personalproject-containers{
   scroll-snap-align: start;
   min-height: 350px;
-  min-width: 2000px;
+  min-width: 1500px;
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;

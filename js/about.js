@@ -2,7 +2,6 @@ let Introduceyourself = document.getElementById("Introduceyourself")
 let Careergoals = document.getElementById("Careergoals")
 let Personalproject = document.getElementById("Personalproject")
 let Workexperience = document.getElementById("Workexperience")
-let Education = document.getElementById("Education")
 
 const checkIntroduceyourself = () => {
     Object.assign(Introduceyourself.style, {
@@ -15,9 +14,6 @@ const checkIntroduceyourself = () => {
         display: "none"
     });
     Object.assign(Workexperience.style, {
-        display: "none"
-    });
-    Object.assign(Education.style, {
         display: "none"
     });
 }
@@ -34,9 +30,6 @@ const checkCareergoals = () => {
     Object.assign(Workexperience.style, {
         display: "none"
     });
-    Object.assign(Education.style, {
-        display: "none"
-    });
 }
 const checkPersonalproject = () => {
     Object.assign(Introduceyourself.style, {
@@ -51,9 +44,6 @@ const checkPersonalproject = () => {
     Object.assign(Workexperience.style, {
         display: "none"
     });
-    Object.assign(Education.style, {
-        display: "none"
-    });
 }
 const checkWorkexperience = () => {
     Object.assign(Introduceyourself.style, {
@@ -66,26 +56,6 @@ const checkWorkexperience = () => {
         display: "none"
     });
     Object.assign(Workexperience.style, {
-        display: "block"
-    });
-    Object.assign(Education.style, {
-        display: "none"
-    });
-}
-const checkEducation = () => {
-    Object.assign(Introduceyourself.style, {
-        display: "none"
-    });
-    Object.assign(Careergoals.style, {
-        display: "none"
-    });
-    Object.assign(Personalproject.style, {
-        display: "none"
-    });
-    Object.assign(Workexperience.style, {
-        display: "none"
-    });
-    Object.assign(Education.style, {
         display: "block"
     });
 }
