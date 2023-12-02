@@ -70,6 +70,9 @@
 .wpress{
   color: rgb(95, 152, 238);
 }
+.nextjs{
+  color: black;
+}
 .body__home-img{
   border-radius: 100vh;
   animation: circle infinite linear 10s;
