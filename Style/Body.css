@@ -1,7 +1,7 @@
 /* HOME */
 .section{
   margin: auto;
-  background-image: url('https://gvn360.com/wp-content/uploads/2020/07/Gearvn_v%C5%A9-tr%E1%BB%A5-m%E1%BB%9Bi_-19-1-scaled.jpg');
+  background-image: url('https://file.hstatic.net/200000722513/article/mot-vu-tru-moi_-11-scaled_0ee5ce2044024a65924f39db94094444_master.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   filter: grayscale(20%);
@@ -43,6 +43,10 @@
     font-size: var(--fontsize-p);
     color: var(--color);
 }
+.home-index_div_icon{
+  width: 200px;
+  text-align: center;
+}
 .home-index__ptwo{
     width: 300px;
     display: flex;
@@ -73,6 +77,10 @@
 .nextjs{
   color: black;
 }
+.deploy{
+  color: orange;
+}
+
 .body__home-img{
   border-radius: 100vh;
   animation: circle infinite linear 10s;
