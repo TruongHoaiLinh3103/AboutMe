@@ -59,8 +59,8 @@
 .html{
   color: red;
 }
-.css{
-  color: blue;
+.canvas{
+  color: rgb(170, 170, 234);
 }
 .sass{
   color: rgb(255, 0, 255);
@@ -68,16 +68,16 @@
 .react{
   color: rgb(5, 255, 55);
 }
-.git, .github{
+.github{
   color: white;
 }
-.wpress{
+.language{
   color: rgb(95, 152, 238);
 }
 .nextjs{
   color: forestgreen;
 }
-.deploy{
+.node{
   color: orange;
 }
 
