@@ -1,10 +1,17 @@
 /* HOME */
 .section{
   margin: auto;
-  background-image: url('https://file.hstatic.net/200000722513/article/mot-vu-tru-moi_-11-scaled_0ee5ce2044024a65924f39db94094444_master.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  filter: grayscale(20%);
+  --s: 160px; /* control the size*/
+  --c1: #d3e2b6;
+  --c2: #aaccb1;
+  
+  background:
+    conic-gradient(at 25% 25%,#0000 75%,var(--c1) 0)
+      0 calc(3*var(--s)/4),
+    conic-gradient(#0000 75%,var(--c2) 0) 
+      calc(var(--s)/-8) calc(5*var(--s)/8),
+    conic-gradient(at 25% 75%,var(--c1) 25%,var(--c2) 0);
+  background-size: var(--s) var(--s);
   overflow: hidden;
 }
 .section-body{
@@ -71,14 +78,8 @@
 .language{
   color: rgb(95, 152, 238);
 }
-.nextjs{
-  color: rgb(121, 206, 121);
-}
 .node{
   color: orange;
-}
-.WordPress{
-  color: rgb(172, 201, 245);
 }
 
 .body__home-img{
@@ -211,7 +212,7 @@
 .Personalproject-title,
 .Personalproject-experience,
 .Personalproject-item{
-  color: var(--color);
+  color: white;
   display: flex;
 }
 .Personalproject-item p a{
