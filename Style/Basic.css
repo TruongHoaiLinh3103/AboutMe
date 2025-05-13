@@ -1,5 +1,6 @@
 *{
     box-sizing: inherit;
+    user-select: none;
 }
 :root{
     --my-fontsize: 2em;

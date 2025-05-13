@@ -62,8 +62,8 @@
 }
 .navbar__overlay{
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 100vh;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.3);
     z-index: 20;
 }
@@ -71,20 +71,29 @@
     width: 70%;
     height: 100%;
     background-color: white;
-    margin-top: -20px;
     position: relative;  
     transform: translateX(-100%);
     opacity: 0;
     transition: all linear 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     z-index: 20;
 }
 .bars__box-nav{
-    padding-top: 40px;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding-left: 0px;
 }
 .bars__box-nav li{
     list-style: none;
     padding: 10px 0px 10px 10%;
+}
+.bars__box-nav li + li{
+    border-top: 1px solid black;
 }
 .bars__box-nav li:hover{
     background-color: rgba(206, 206, 206, 0.65);

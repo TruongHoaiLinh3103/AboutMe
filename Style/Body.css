@@ -52,7 +52,9 @@
 }
 .home-index_div_icon{
   width: 200px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 .home-index__ptwo{
     width: 300px;
@@ -128,6 +130,8 @@
   display: grid;
   grid-template-columns: 30% 69%;
   gap: 1%;
+  max-width: 1200px;
+  width: 90%;
   padding: 50px 0px;
 }
 .about-navbar{
@@ -145,6 +149,12 @@
   font-size: 20px;
   cursor: pointer;
   user-select: none;
+}
+.about-navbar_btn{
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  justify-content: center;
 }
 .active{
   filter: blur(2px);
@@ -226,31 +236,40 @@
 
 }
 @media only screen and (max-width : 46.1875em){
-
+  .about-body{
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 1%;
+  }
 }
 /* MY PROFILE */
-#myProfile{
-    border-radius: 10px;
-    padding: 50px 0px;
+.myProfile-body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-#myProfile h1, #aboutMe h1, #bank h1{
-    margin: 0px;
+
+#myProfile{
+    padding: 30px 0px;
+    box-sizing: border-box;
+    max-width: 90%;
+    
+}
+#bank h1{
+    margin: -30px 0px 0px 0px;
     color: var(--color);
     font-size: var(--my-fontsize);
     letter-spacing: 2px;
     padding-left: 20px;
-    margin-top: -30px;
 }
 #myProfile h1.myProfile-title{
     letter-spacing: 10px;
     color: var(--color);
     font-size: var(--my-fontsize);
+    margin: 0px;
 }
 .myProfile-form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+    margin-top: 10px;
 }
 .myProfile-form__profile{
     width: 100%;
@@ -262,7 +281,6 @@
     align-items: center;
     border-top: outset;
     border-left: outset;
-    margin-top: 50px;
     box-shadow: 4px 4px 5px -1px rgba(0, 0, 0, 0.59);
 }
 .form__profile-i{
@@ -339,6 +357,7 @@ a.profile-dis_mar:hover, .profile-dis_mar a:hover{
   
 }
 @media only screen and (max-width: 78.9375em){
+
 }
 @media only screen and (max-width : 46.1875em){
   .form__profile-i{
