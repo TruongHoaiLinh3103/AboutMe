@@ -71,7 +71,7 @@
     width: 70%;
     height: 100vh;
     background-color: white;
-    position: relative;  
+    position: fixed;  
     transform: translateX(-100%);
     opacity: 0;
     transition: all linear 0.4s;
